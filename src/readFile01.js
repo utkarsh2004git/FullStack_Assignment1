@@ -14,4 +14,4 @@ function printFileContents(fileName) {
   });
 }
 
-printFileContents('poem.txt');
+printFileContents('src/poem.txt');
