@@ -18,8 +18,8 @@ const createRequestUrl = (offset) => {
 
 const fetchPincodeData=(offset)=>{
     const fetchPromise=fetch(createRequestUrl(offset)).then((response)=>{
-        const { records }=response.json();
-        return records;
+        // const { records }=response.json();
+        return response.json();
         
     })
     fetchPromise.then((data) => {
